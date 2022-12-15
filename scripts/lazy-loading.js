@@ -1,3 +1,4 @@
+// APPLIES LAZY LOADING TO THE WEBSITE | Main (Home) 
 //Loads all the images with data-src attribute
 const images = document.querySelectorAll("img[data-src]");
 

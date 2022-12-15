@@ -1,3 +1,4 @@
+//Slideshow | Main(Home)
 // select HTML elements in the document
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");

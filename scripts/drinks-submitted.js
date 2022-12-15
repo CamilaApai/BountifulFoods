@@ -1,4 +1,4 @@
-// CALCULATES NUMBER OF DRINKS SUBMITTED USING THE FORM | Main
+// CALCULATES NUMBER OF DRINKS SUBMITTED USING THE FORM | Main (Home) 
 // Initialize display elements
 let drinksmade = document.querySelector(".drinksmade");
 

@@ -1,4 +1,4 @@
-//Slideshow| Main
+//Slideshow | Main(Home)
 
 //Set the slide index to 1.
 let slideIndex = 1;

@@ -37,9 +37,7 @@
     <section>
       <div class="makedrink">
         <h2>Make your drink!</h2>
-        <form action="/fresh.html" class="form">
-          <fieldset>
-            <legend>Fill the Form</legend>
+        <form action="/fresh.html" class="form">   
             <label for="fname">First Name*</label>
             <input type="text" name="fname" id="fname" required>
             <label for="lname">Last Name</label>
@@ -63,7 +61,6 @@
             </select>
             <label for="instructions">Additional Instructions</label>
             <textarea name="instructions" id="instructions" cols="30" rows="5"></textarea>
-          </fieldset>
         </form>
         <input type="submit" class="btn" name="btn" id="btn" value="Submit"
           onclick="displayFormData()">
@@ -77,7 +74,7 @@
         <p id="secondoptioninput"></p>
         <p id="thirdoptioninput"></p>
         <p id="instructionsinput"></p>
-        <p id="dateinput"></p>
+        
         <div class="displayinfo"></div>
       </div>
     </section>

@@ -191,23 +191,13 @@ section {
 /*End Home Pague*/
 
 /*Fresh Page*/
-form {
-  margin: var(--base-margin);
-}
-
-form fieldset {
+form  {
   display: flex;
   flex-direction: column;
   text-align: left;
   border: var(--border);
   padding: var(--base-padding);
-  border-radius: 10px;
-}
-
-form legend {
-  text-align: center;
-  padding: var(--base-padding);
-  font-weight: bold;
+  margin: var(--base-margin);
 }
 
 form label,
