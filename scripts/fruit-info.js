@@ -56,9 +56,9 @@ function displayFruitData(data) {
   let calories = document.createElement("p");
 
   //Change the textContent property of the firstname element to contain the prophet's full name
-  newfirstoption.innerHTML = `${data.name}`;
-  newsecondoption.textContent = `${data.name}`;
-  newthirdoption.textContent = `${data.name}`;
+  newfirstoption.innerHTML = `First Fruit: ${data.name}`;
+  newsecondoption.textContent = `Second Fruit: ${data.name}`;
+  newthirdoption.textContent = `Third Fruit: ${data.name}`;
 
   carbohydrates.textContent = `Carbohydrates: ${data.nutritions.carbohydrates}`;
   protein.textContent = `Protein: ${data.nutritions.protein}`;
@@ -80,3 +80,4 @@ function displayFruitData(data) {
   //Addthe existing HTML div with the displayinfo class with the section(card)
   displayinfo.appendChild(card);
 }
+
