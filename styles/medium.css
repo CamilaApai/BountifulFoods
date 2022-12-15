@@ -88,6 +88,11 @@
   /*End Fresh Page*/
 
   /*About Us Page*/
+  /* Map */
+  iframe {
+    width: 550px;
+    height: 450px;
+  }
   /*End About Us Page*/
 
   /*|| FOOTER ||*/
