@@ -167,17 +167,6 @@ section {
   border: var(--border);
 }
 
-.slides img[data-src],
-.slides2 img[data-src] {
-  filter: blur(0.2em);
-}
-
-.slides img,
-.slides2 img {
-  filter: blur(0em);
-  transition: filter 0.5s;
-}
-
 .dot,
 .dot2 {
   background-color: white;
