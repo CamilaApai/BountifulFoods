@@ -239,6 +239,10 @@ form select:required {
   background-color: #eca311;
   box-shadow: 0 0 20px #f8af1c;
 }
+
+.drinkinfo {
+  border: none;
+}
 /*End Fresh Page*/
 
 /*|| FOOTER ||*/

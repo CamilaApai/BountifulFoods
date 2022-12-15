@@ -20,7 +20,7 @@ function displayFormData() {
   const secondoption = document.querySelector("#secondoption").value;
   const thirdoption = document.querySelector("#thirdoption").value;
   const instructions = document.querySelector("#instructions").value;
-  const date = document.querySelector("#datetime").value;
+  //const date = document.querySelector("#datetime").value;
 
   fullnameinput.innerHTML = `Full Name: ${firstname} ${lastname}`;
   emailinput.innerHTML = `Email: ${email}`;
@@ -29,7 +29,7 @@ function displayFormData() {
   secondoptioninput.innerHTML = `Second Fruit: ${secondoption}`;
   thirdoptioninput.innerHTML = `Third Fruit: ${thirdoption}`;
   instructionsinput.innerHTML = `Additional Instructions: ${instructions}`;
-  dateinput.innerHTML = `Date: ${date}`;
+  //dateinput.innerHTML = `Date: ${date}`;
 }
 
 let numdrinksCount = Number(window.localStorage.getItem("countdrinks"));
