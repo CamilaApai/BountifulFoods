@@ -1,0 +1,60 @@
+@media only screen and (min-width: 60em) {
+  /*|| HEADER Grid||*/
+
+  .logo {
+    width: 150px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p,
+  nav,
+  main,
+  footer {
+    font-size: 18px;
+  }
+
+  /* Social Icons */
+
+  /* || MAIN ||*/
+
+  /*Home Page*/
+  /* Slides */
+  /*End Home Page*/
+
+  /*Fresh Page*/
+  /*End Fresh Page*/
+
+  /*About Us Page*/
+  main.aboutus {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+  }
+
+  section.history {
+    grid-column: 1/3;
+  }
+  section.contact {
+    grid-column: 1;
+  }
+
+  section.map {
+    grid-column: 2;
+  }
+
+  /*End About Us Page*/
+
+  /*|| FOOTER ||*/
+
+  /*|| FOOTER Grid ||*/
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bountiful Foods | Home</title>
+  <meta name="author" content="Camila Apai">
+  <meta name="description" content="Camila Apai Bountiful Foods Home Pague">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600&family=Signika+Negative:wght@300&display=swap">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+  <header>
+    <a href="/"><img class="logo" src="images/logo.webp" alt="Website Logo" width="100" height="100" loading="lazy"></a>
+    <h1 class="title">Bountiful Foods</h1>
+    <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+    <nav>
+      <ul id="navigation">
+        <li><a class="active" href="/">Home</a></li>
+        <li><a href="fresh.html">Fresh</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="home">
+    <section class="slidescontainer hide">
+      <h2>Fruit</h2>
+      <img class="slides" src="images/placeholder.png" data-src="images/blueberries.jpg"
+        alt="Image of blueberries" loading="lazy" width="400" height="400">
+      <img class="slides" src="images/placeholder.png"
+        data-src="images/apples.jpg" alt="Image of apples" loading="lazy"
+        width="400" height="400">
+      <img class="slides" src="images/placeholder.png" data-src="images/strawberris.jpg"
+        alt="Image of strawberries" loading="lazy" width="400" height="400">
+      <img class="slides" src="images/placeholder.png" data-src="images/bananas.jpg"
+        alt="Image of bananas" loading="lazy" width="400" height="400">
+      <img class="slides" src="images/placeholder.png" data-src="images/oranges.jpg"
+        alt="Image of oranges" loading="lazy" width="400" height="400">
+      <span class="dot" onclick="currentImage(1)"></span>
+      <span class="dot" onclick="currentImage(2)"></span>
+      <span class="dot" onclick="currentImage(3)"></span>
+      <span class="dot" onclick="currentImage(4)"></span>
+      <span class="dot" onclick="currentImage(5)"></span>
+      <p class="btn"><a href="fresh.html">See more fruit options on our drink form!</a>
+    </section>
+
+    <section class="slidescontainer">
+      <h2>Drinks</h2>
+      <img class="slides2" src="images/placeholder.png" data-src="images/purpledrink.jpg"
+        alt="Image of grapes smoothie" loading="lazy" width="400" height="400">
+      <img class="slides2" src="images/placeholder.png" data-src="images/greendrink.jpg"
+        alt="Image of apples smoothie" loading="lazy" width="400" height="400">
+      <img class="slides2" src="images/placeholder.png"
+        data-src="images/pinkdrink.jpg" alt="Image of strawberries smoothie" loading="lazy"
+        width="400" height="400">
+      <img class="slides2" src="images/placeholder.png" data-src="images/whitedrink.jpg"
+        alt="Image of bananas smoothie" loading="lazy" width="400" height="400">
+      <img class="slides2" src="images/placeholder.png"
+        data-src="images/orangedrink.jpg" alt="Image of oranges smoothie" loading="lazy" width="400"
+        height="400">
+      <span class="dot2" onclick="currentImage(1)"></span>
+      <span class="dot2" onclick="currentImage(2)"></span>
+      <span class="dot2" onclick="currentImage(3)"></span>
+      <span class="dot2" onclick="currentImage(4)"></span>
+      <span class="dot2" onclick="currentImage(5)"></span>
+      <p class="btn"><a href="fresh.html">Make your own fruit drink mix!</a></p>
+    </section>
+
+    <section>
+      <h2>Coastal area</h2>
+      <p>Carlsbad, California is a beautiful city located in the region of San Diego County. This United States city is well known for its oceanfront beaches and rich culinary traditions. Its comprehensive options for food and drinks its one of its main attractions. When visiting the city, tourists should not miss visiting Tower 37 beach.  A great place where they can spend their time with their friends and family, and have a lot of fun in a clean and safe area. It is located close to the Tamarack Beach Resort and Hotel, where many families decide to lodge during their vacations. The best part of it is that the beach, the hotel, and many other attractions are close to the Bountiful Foods store, which both visitants and locals often visit to try our delicious drinks and our healthy foods.</p>
+    </section>
+
+    <section>
+      <h2>Current Weather Data</h2>
+      <img src="images/weather.png" alt="" id="weather-icon">
+      <p><span id="current-temp"></span></p>
+      <p id="weather-description"></p>
+      <p id="humidity"></p>
+      <h3>Three Day Temperature Forecast</h3>
+      <p id="firstforecast"></p>
+      <p id="secondforecast"></p>
+      <p id="thirdforecast"></p>
+    </section>
+    <section class="numberofdrinks">
+      <h2>Custom Drinks</h2>
+      <p class="drinksmade"></p>
+    </section>
+
+  </main>
+  <footer>
+    <div class="grid">
+      <a href="/"><img class="logo" src="images/logo.webp" alt="Website Logo" width="100" height="100" loading="lazy"></a>
+        <h2 class="title">Bountiful Foods</h2>
+        <div class="info">
+          <p>📍Location: <a href="https://goo.gl/maps/BnTEcWrnpQ85rYj67">3360 Carlsbad Blvd, Carlsbad, California</a></p>
+          <p>📩 Email: <a href="mailto:bountifulfoods@gmail.com">bountifulfoods@gmail.com</a></p>
+          <p>☎️ Phone: <a href="tel:53822467432">+(538) 2246 7432</a></p>
+          <p>🔗<a href="attribution.html">Resources Used</a></p>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook logo" width="25"
+              height="25"></a>
+          <a href="https://www.linkedin.com/in/camila-apai/"><img src="images/linkedin.png" alt="Linkedin logo"
+              width="25" height="25"></a>
+          <a href=""><img src="images/instagram.png" alt="Instagram logo" width="25" height="25"></a>
+        </div>
+    </div>
+    <hr>
+    <p>&copy;<span id="currentyear"></span> Bountiful Foods | Last Modification: <span id="lastModified"></span></p>
+  </footer>
+  <script src="scripts/nav-button.js"></script>
+  <script src="scripts/lazy-loading.js"></script>
+  <script src="scripts/slideshow.js"></script>
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/drinks-submitted.js"></script>
+  <script src="scripts/dates.js"></script>
+</body>
+
+</html>

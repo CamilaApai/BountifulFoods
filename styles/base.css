@@ -1,0 +1,277 @@
+/* General CSS */
+:root {
+  --primary-color: #c1f4c5;
+  --secondary-color: #fefcf3;
+  --accent1-color: #b2ea70;
+  --accent2-color: #952471;
+  --heading-font: "Cormorant Upright", Georgia, serif;
+  --paragraph-font: "Signika Negative", Helvetica, sans-serif;
+  --paragraph-size: 16px;
+  --base-padding: 10px;
+  --base-margin: 10px;
+  --border: 1px solid black;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+
+header,
+footer {
+  color: black;
+  background-color: var(--primary-color);
+}
+
+nav,
+main:not(h1, h2, h3),
+footer {
+  font-size: var(--paragraph-size);
+  font-family: var(--paragraph-font);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*|| HEADER ||*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  /*padding-left: var(--base-padding);*/
+  justify-content: center;
+}
+
+.logo {
+  display: block;
+  position: relative;
+  padding-top: var(--base-padding);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--accent2-color);
+  font-family: var(--heading-font);
+}
+
+h1 {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3,
+legend {
+  font-size: 17px;
+}
+
+.title {
+  margin-top: 0;
+}
+
+/* Navigation Bar */
+#hamburgerBtn {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+
+nav,
+nav ul.open,
+nav ul li a,
+#hamburgerBtn span:nth-child(1),
+#hamburgerBtn.open span:nth-child(2) {
+  display: block;
+}
+
+nav ul,
+#hamburgerBtn.open span:nth-child(1),
+#hamburgerBtn span:nth-child(2) {
+  display: none;
+}
+
+nav button,
+#hamburgerBtn {
+  margin: 0.2rem 2vw;
+  background: transparent;
+  font-size: 2rem;
+  /*color: ;*/
+  border: none;
+}
+
+nav {
+  background-color: var(--accent1-color);
+  width: 100%;
+  border: var(--border);
+}
+
+#navigation {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  border-bottom: var(--border);
+}
+
+nav ul li:last-child {
+  border-right: none;
+  border-bottom: none;
+}
+
+nav ul li a {
+  padding: 0.5rem 0rem;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: var(--accent2-color);
+  font-weight: bold;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+}
+
+/* || MAIN ||*/
+main {
+  display: grid;
+}
+
+section {
+  background-color: var(--accent1-color);
+  margin: var(--base-margin);
+  padding: var(--base-padding);
+  border: var(--border);
+}
+
+/*Home Pague*/
+/* Slides */
+.hide {
+  display: none;
+}
+
+.slides,
+.slides2 {
+  display: none;
+  width: 100%;
+  border: var(--border);
+}
+
+.slides img[data-src],
+.slides2 img[data-src] {
+  filter: blur(0.2em);
+}
+
+.slides img,
+.slides2 img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+.dot,
+.dot2 {
+  background-color: white;
+  border-radius: 50%;
+  bottom: 20px;
+  cursor: pointer;
+  display: inline-block;
+  height: 15px;
+  margin: 0 5px;
+  position: relative;
+  width: 15px;
+}
+
+.active {
+  background-color: var(--accent1-color);
+}
+
+/*End Home Pague*/
+
+/*Fresh Page*/
+form {
+  margin: var(--base-margin);
+}
+
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border: var(--border);
+  padding: var(--base-padding);
+  border-radius: 10px;
+}
+
+form legend {
+  text-align: center;
+  padding: var(--base-padding);
+  font-weight: bold;
+}
+
+form label,
+form input {
+  padding: 15px 5px 5px 0px;
+}
+
+input:not(.btn),
+form select,
+form textarea {
+  background-color: var(--secondary-color);
+  border: var(--border);
+}
+
+form input:required,
+form select:required {
+  border-left: #f8af1c solid 5px;
+}
+
+.btn {
+  padding: var(--base-padding);
+  background-color: #f8af1c;
+  font-weight: bold;
+  border-radius: 5px;
+  border: var(--border);
+}
+
+.btn:hover {
+  background-color: #eca311;
+}
+/*End Fresh Page*/
+
+/*About Us Page*/
+/*End About Us Page*/
+
+/*|| FOOTER ||*/
+footer {
+  padding: var(--base-padding);
+}
+
+footer .info a:hover {
+  text-decoration: underline;
+}
+
+footer hr {
+  border: 0px;
+  width: 100%;
+  background-color: var(--accent2-color);
+  height: 1px;
+}
+
+footer .grid {
+  display: grid;
+  align-items: center;
+}
+
+footer .logo,
+footer .title {
+  display: none;
+}
