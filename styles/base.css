@@ -32,6 +32,10 @@ footer {
   font-family: var(--paragraph-font);
 }
 
+img:hover:not(.logo, .social img) {
+  box-shadow: 0 0 50px #333;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -233,6 +237,7 @@ form select:required {
 
 .btn:hover {
   background-color: #eca311;
+  box-shadow: 0 0 20px #f8af1c;
 }
 /*End Fresh Page*/
 
@@ -264,3 +269,4 @@ footer .logo,
 footer .title {
   display: none;
 }
+
