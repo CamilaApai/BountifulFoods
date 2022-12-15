@@ -42,5 +42,5 @@ function showImages(n) {
 
   dots[slideIndex - 1].className += " active";
   dots2[slideIndex - 1].className += " active";
-  setTimeout(showImages, 3000);
+  //setTimeout(showImages, 2000);
 }
