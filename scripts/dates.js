@@ -27,13 +27,3 @@ dateformat = new Intl.DateTimeFormat("de-AT", {
 //Use querySelector to access the HTML element.
 document.querySelector("#lastModified").textContent = dateformat;
 
-//GETS CURRENT DATE | MAIN (Fresh)
-//Get current date
-//Use querySelector to access the HTML element.
-const dateUK = document.querySelector("#date");
-
-const fulldateUK = new Intl.DateTimeFormat("en-UK", {
-  dateStyle: "full",
-}).format(current_date);
-
-dateUK.innerHTML = `Date: ${fulldateUK}`;

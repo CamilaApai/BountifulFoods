@@ -32,7 +32,7 @@ footer {
   font-family: var(--paragraph-font);
 }
 
-img:hover:not(.logo, .social img) {
+img:hover:not(.logo, .social img, #weather-icon) {
   box-shadow: 0 0 50px #333;
 }
 
