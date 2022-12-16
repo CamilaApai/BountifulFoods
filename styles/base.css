@@ -245,6 +245,11 @@ footer .info a:hover {
   text-decoration: underline;
 }
 
+footer .social img {
+  width: 25px;
+  height: auto;
+}
+
 footer hr {
   border: 0px;
   width: 100%;
@@ -261,4 +266,5 @@ footer .logo,
 footer .title {
   display: none;
 }
+
 

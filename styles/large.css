@@ -46,4 +46,17 @@
   }
 
   /*End About Us Page*/
+
+/*|| FOOTER ||*/
+footer .grid {
+  grid-template-rows: 1fr 0fr 0fr;
+}
+
+  footer .social {
+    text-align: center;
+  }
+
+  footer .social img {
+    width: 40px;
+}
 }
