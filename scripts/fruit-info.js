@@ -20,17 +20,19 @@ function displayFormData() {
   const secondoption = document.querySelector("#secondoption").value;
   const thirdoption = document.querySelector("#thirdoption").value;
   const instructions = document.querySelector("#instructions").value;
-  //const date = document.querySelector("#datetime").value;
+  //const carbohydrates = document.querySelector("#carbohydrates").values;
 
-  fullnameinput.innerHTML = `${firstname} ${lastname}`;
-  emailinput.innerHTML = `${email}`;
-  phoneinput.innerHTML = `${phone}`;
-  firstoptioninput.innerHTML = `${firstoption}`;
-  secondoptioninput.innerHTML = `${secondoption}`;
-  thirdoptioninput.innerHTML = `${thirdoption}`;
-  instructionsinput.innerHTML = `${instructions}`;
-  //dateinput.innerHTML = `Date: ${date}`;
+
+  fullnameinput.innerHTML = `Full Name: ${firstname} ${lastname}`;
+  emailinput.innerHTML = `Email:  ${email}`;
+  phoneinput.innerHTML = `Cell Phone:  ${phone}`;
+  firstoptioninput.innerHTML = `First Fruit: ${firstoption}`;
+  secondoptioninput.innerHTML = `Second Fruit: ${secondoption}`;
+  thirdoptioninput.innerHTML = `Third Fruit: ${thirdoption}`;
+  instructionsinput.innerHTML = `Additional Instructions: ${instructions}`;
+  //carbohydratesdata.innerHTML = `Carbohydrates: ${carbohydrates}`;
 }
+
 
 let numdrinksCount = Number(window.localStorage.getItem("countdrinks"));
 if (numdrinksCount == 0) {
@@ -41,6 +43,7 @@ if (numdrinksCount == 0) {
 numdrinksCount = Number(
   window.localStorage.setItem("countdrinks", numdrinksCount)
 );
+
 
 function displayFruitData(data) {
   // Create elements to add to the document
@@ -80,4 +83,3 @@ function displayFruitData(data) {
   //Addthe existing HTML div with the displayinfo class with the section(card)
   displayinfo.appendChild(card);
 }
-
