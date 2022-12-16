@@ -24,9 +24,9 @@ function displayFormData() {
   fullnameinput.innerHTML = `Full Name: ${firstname} ${lastname}`;
   emailinput.innerHTML = `Email:  ${email}`;
   phoneinput.innerHTML = `Cell Phone:  ${phone}`;
-  firstoptioninput.innerHTML = `First Fruit: ${firstoption}`;
-  secondoptioninput.innerHTML = `Second Fruit: ${secondoption}`;
-  thirdoptioninput.innerHTML = `Third Fruit: ${thirdoption}`;
+  firstoptioninput.innerHTML = `${firstoption}`;
+  secondoptioninput.innerHTML = `${secondoption}`;
+  thirdoptioninput.innerHTML = `${thirdoption}`;
   instructionsinput.innerHTML = `Additional Instructions: ${instructions}`;
 }
 
