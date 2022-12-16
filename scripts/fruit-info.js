@@ -20,8 +20,6 @@ function displayFormData() {
   const secondoption = document.querySelector("#secondoption").value;
   const thirdoption = document.querySelector("#thirdoption").value;
   const instructions = document.querySelector("#instructions").value;
-  //const carbohydrates = document.querySelector("#carbohydrates").values;
-
 
   fullnameinput.innerHTML = `Full Name: ${firstname} ${lastname}`;
   emailinput.innerHTML = `Email:  ${email}`;
@@ -30,7 +28,6 @@ function displayFormData() {
   secondoptioninput.innerHTML = `Second Fruit: ${secondoption}`;
   thirdoptioninput.innerHTML = `Third Fruit: ${thirdoption}`;
   instructionsinput.innerHTML = `Additional Instructions: ${instructions}`;
-  //carbohydratesdata.innerHTML = `Carbohydrates: ${carbohydrates}`;
 }
 
 
