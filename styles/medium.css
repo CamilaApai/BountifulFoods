@@ -70,6 +70,12 @@
   }
 
 
+img.fruits,
+img.drinks {
+ width: 150px;
+ height: auto;
+}
+
   /*Fresh Page*/
   main.fresh section {
     display: grid;

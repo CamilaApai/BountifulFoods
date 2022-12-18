@@ -160,7 +160,7 @@ section,
 }
 
 /*Home Pague*/
-/* Slides */
+/* Images */
 .hide {
   display: none;
 }
@@ -185,8 +185,8 @@ img.drinks {
 }
 
 #weather-description,
-.weatherinfo p + p{
-  text-transform: capitalize; 
+.weatherinfo p + p {
+  text-transform: capitalize;
 }
 /*End Home Pague*/
 

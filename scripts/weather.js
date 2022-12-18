@@ -42,9 +42,9 @@ function display(data) {
   currentTemp.innerHTML = `Temperature: ${data.list[0].main.temp.toFixed(0)}°F`;
   weatherDescription.innerHTML = `Condition: <capitalize>${data.list[0].weather[0].description}<capitalize>`;
   humidity.innerHTML = `Humidity: ${data.list[0].main.humidity.toFixed(0)}%`;
-  firstForecast.innerHTML = `Day 1: ${data.list[8].main.temp.toFixed(0)}°F`;
-  secondForecast.innerHTML = `Day 2: ${data.list[16].main.temp.toFixed(0)}°F`;
-  thirdForecast.innerHTML = `Day 3: ${data.list[24].main.temp.toFixed(0)}°F`;
+  firstForecast.innerHTML = `${data.list[8].main.temp.toFixed(0)}°F`;
+  secondForecast.innerHTML = `${data.list[16].main.temp.toFixed(0)}°F`;
+  thirdForecast.innerHTML = `${data.list[24].main.temp.toFixed(0)}°F`;
   
   iconOneDescription.innerHTML = `${data.list[8].weather[0].description}`;
   iconTwoDescription.innerHTML = `${data.list[16].weather[0].description}`;
