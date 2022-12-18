@@ -5,9 +5,17 @@ const weatherIcon = document.querySelector("#weather-icon");
 const weatherDescription = document.querySelector("#weather-description");
 const humidity = document.querySelector("#humidity");
 const forecast = document.querySelector("#forecast");
-const firstforecast = document.querySelector("#firstforecast");
-const secondforecast = document.querySelector("#secondforecast");
-const thirdforecas = document.querySelector("#thirdforecast");
+const firstForecast = document.querySelector("#firstforecast");
+const secondForecast = document.querySelector("#secondforecast");
+const thirdForecast = document.querySelector("#thirdforecast");
+
+const iconOne = document.querySelector("#iconone");
+const iconTwo = document.querySelector("#icontwo");
+const iconThree = document.querySelector("#iconthree");
+
+const iconOneDescription = document.querySelector("#icononedescription");
+const iconTwoDescription = document.querySelector("#icontwodescription");
+const iconThreeDescription = document.querySelector("#iconthreedescription");
 
 //Creates an "url" variable that stores the API URL
 const forecastURL =
@@ -32,16 +40,31 @@ apiFetch();
 // Display the results
 function display(data) {
   currentTemp.innerHTML = `Temperature: ${data.list[0].main.temp.toFixed(0)}°F`;
-  weatherDescription.innerHTML = `Condition: ${data.list[0].weather[0].description}`;
+  weatherDescription.innerHTML = `Condition: <capitalize>${data.list[0].weather[0].description}<capitalize>`;
   humidity.innerHTML = `Humidity: ${data.list[0].main.humidity.toFixed(0)}%`;
-  firstforecast.innerHTML = `Day 1: ${data.list[8].main.temp.toFixed(0)}°F`;
-  secondforecast.innerHTML = `Day 2: ${data.list[16].main.temp.toFixed(0)}°F`;
-  thirdforecas.innerHTML = `Day 3: ${data.list[24].main.temp.toFixed(0)}°F`;
+  firstForecast.innerHTML = `Day 1: ${data.list[8].main.temp.toFixed(0)}°F`;
+  secondForecast.innerHTML = `Day 2: ${data.list[16].main.temp.toFixed(0)}°F`;
+  thirdForecast.innerHTML = `Day 3: ${data.list[24].main.temp.toFixed(0)}°F`;
+  
+  iconOneDescription.innerHTML = `${data.list[8].weather[0].description}`;
+  iconTwoDescription.innerHTML = `${data.list[16].weather[0].description}`;
+  iconThreeDescription.innerHTML = `${data.list[24].weather[0].description}`;
 
   const iconsrc = `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`;
+  const iconsrcone = `https://openweathermap.org/img/w/${data.list[8].weather[0].icon}.png`;
+  const iconsrctwo = `https://openweathermap.org/img/w/${data.list[16].weather[0].icon}.png`;
+  const iconsrcthree = `https://openweathermap.org/img/w/${data.list[24].weather[0].icon}.png`;
 
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", weatherDescription);
-  weatherIcon.width = 50;
-  weatherIcon.height = 50;
+  weatherIcon.loading = "lazy";
+  iconOne.setAttribute("src", iconsrcone);
+  iconOne.setAttribute("alt", iconOne);
+  iconOne.loading = "lazy";
+  iconTwo.setAttribute("src", iconsrctwo);
+  iconTwo.setAttribute("alt", iconTwo);
+  iconTwo.loading = "lazy";
+  iconThree.setAttribute("src", iconsrcthree);
+  iconThree.setAttribute("alt", iconThree);
+  iconThree.loading = "lazy";
 }
