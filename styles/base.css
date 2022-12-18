@@ -161,15 +161,22 @@ section,
 
 /*Home Pague*/
 /* Slides */
+
 .hide {
   display: none;
 }
 
 .slides,
 .slides2 {
-  display: none;
-  width: 100%;
+  width: auto;
+  height: 150px;
   border: var(--border);
+}
+
+img.slides,
+img.slides2 {
+ width: 130px;
+ height: auto;
 }
 
 .dot,
@@ -187,7 +194,7 @@ section,
 
 .active {
   background-color: var(--accent1-color);
-}
+}/*
 
 /*End Home Pague*/
 

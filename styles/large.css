@@ -24,9 +24,18 @@
     font-size: 18px;
   }
 
-  /* Social Icons */
-
   /* || MAIN ||*/
+  /*Home Pague*/
+  /* Slides */
+  .hide {
+    display: block;
+  }
+
+  img.slides,
+ img.slides2 {
+  width: 200px;
+  height: auto;
+ }
 
   /*About Us Page*/
   main.aboutus {

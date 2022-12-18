@@ -61,9 +61,19 @@
   }
 
   /* Slides */
-  .hide {
+  .slidescontainer.hide {
     display: block;
   }
+
+  .hide {
+    display: none;
+  }
+
+
+.slides,
+.slides2 {
+  height: 200px;
+}
 
   /*Fresh Page*/
   main.fresh section {
