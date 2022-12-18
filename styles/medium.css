@@ -70,11 +70,6 @@
   }
 
 
-.fruits,
-.drinks {
-  height: 200px;
-}
-
   /*Fresh Page*/
   main.fresh section {
     display: grid;
