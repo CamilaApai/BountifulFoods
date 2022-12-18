@@ -25,17 +25,20 @@
   }
 
   /* || MAIN ||*/
+
   /*Home Pague*/
   /* Slides */
   .hide {
     display: block;
   }
 
-  img.slides,
- img.slides2 {
+  img.fruits,
+  img.drinks {
   width: 200px;
   height: auto;
  }
+
+ /*EndHome Pague*/
 
   /*About Us Page*/
   main.aboutus {

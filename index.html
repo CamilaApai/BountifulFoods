@@ -34,21 +34,21 @@
     </nav>
   </header>
   <main class="home">
-    <section class="slidescontainer hide">
+    <section class="homeimages hide">
       <h2>Fruit</h2>
-      <img class="slides" src="images/apples.jpg" alt=" many apples together" loading="lazy">
-      <img class="slides" src="images/bananas.jpg" alt=" many bananas together" loading="lazy">
-      <img class="slides" src="images/oranges.jpg" alt=" many oranges together" loading="lazy">
+      <img class="fruits" src="images/apples.jpg" alt=" many apples together" loading="lazy">
+      <img class="fruits" src="images/bananas.jpg" alt=" many bananas together" loading="lazy">
+      <img class="fruits" src="images/oranges.jpg" alt=" many oranges together" loading="lazy">
       <p class="btn"><a href="fresh.html">See more fruit options on our drink form!</a>
     </section>
 
-    <section class="slidescontainer">
+    <section class="homeimages">
       <h2>Drinks</h2>
-      <img class="slides2" src="images/greendrink.jpg"
+      <img class="drinks" src="images/greendrink.jpg"
         alt=" green apple smoothie with mint and lemon, which is on a tray" loading="lazy">
-      <img class="slides2" src="images/whitedrink.jpg" alt=" a banana smoothie with hazelnuts, which is on a tea towel"
+      <img class="drinks" src="images/whitedrink.jpg" alt=" a banana smoothie with hazelnuts, which is on a tea towel"
         loading="lazy">
-      <img class="slides2" src="images/orangedrink.jpg" alt=" orange and pineapple smoothie, which is on a dish towel"
+      <img class="drinks" src="images/orangedrink.jpg" alt=" orange and pineapple smoothie, which is on a dish towel"
         loading="lazy">
       <p class="btn"><a href="fresh.html">Make your own fruit drink mix!</a></p>
     </section>
@@ -73,15 +73,21 @@
       <p id="humidity"></p>
       <h3>Three Day Temperature Forecast</h3>
       <div class="threedayinfo">
-        <img src="images/weather.png" alt="" id="iconone" class="icon">
-        <p id="firstforecast"></p>
-        <p id="icononedescription"></p>
-        <img src="images/weather.png" alt="" id="icontwo" class="icon">
-        <p id="secondforecast"></p>
-        <p id="icontwodescription"></p>
-        <img src="images/weather.png" alt="" id="iconthree" class="icon">
-        <p id="thirdforecast"></p>
-        <p id="iconthreedescription"></p>
+        <div class="weatherone">
+          <img src="images/weather.png" alt="" id="iconone" class="icon">
+          <p id="firstforecast"></p>
+          <p id="icononedescription"></p>
+        </div>
+        <div class="weatherinfo">
+          <img src="images/weather.png" alt="" id="icontwo" class="icon">
+          <p id="secondforecast"></p>
+          <p id="icontwodescription"></p>
+        </div>
+        <div class="weatherinfo">
+          <img src="images/weather.png" alt="" id="iconthree" class="icon">
+          <p id="thirdforecast"></p>
+          <p id="iconthreedescription"></p>
+        </div>
       </div>
     </section>
     <section class="numberofdrinks">

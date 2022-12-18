@@ -61,7 +61,7 @@
   }
 
   /* Slides */
-  .slidescontainer.hide {
+  .homeimages.hide {
     display: block;
   }
 
@@ -70,8 +70,8 @@
   }
 
 
-.slides,
-.slides2 {
+.fruits,
+.drinks {
   height: 200px;
 }
 

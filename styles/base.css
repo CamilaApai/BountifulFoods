@@ -165,36 +165,29 @@ section,
   display: none;
 }
 
-.slides,
-.slides2 {
+.fruits,
+.drinks {
   width: auto;
   height: 150px;
   border: var(--border);
 }
 
-img.slides,
-img.slides2 {
+img.fruits,
+img.drinks {
  width: 130px;
  height: auto;
 }
 
-.dot,
-.dot2 {
-  background-color: white;
-  border-radius: 50%;
-  bottom: 20px;
-  cursor: pointer;
-  display: inline-block;
-  height: 15px;
-  margin: 0 5px;
-  position: relative;
-  width: 15px;
+/*Weather*/
+.threedayinfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.active {
-  background-color: var(--accent1-color);
-}/*
-
+#weather-description,
+.weatherinfo p + p{
+  text-transform: capitalize; 
+}
 /*End Home Pague*/
 
 /*Fresh Page*/
