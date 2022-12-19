@@ -60,14 +60,10 @@ function display(data) {
   weatherIcon.setAttribute("src", iconsrc);
   weatherIcon.setAttribute("alt", desc);
   weatherDescription.textContent = desc;
-  weatherIcon.loading = "lazy";
   iconOne.setAttribute("src", iconsrcone);
   iconOne.setAttribute("alt", descOne);
-  iconOne.loading = "lazy";
   iconTwo.setAttribute("src", iconsrctwo);
   iconTwo.setAttribute("alt", descTwo);
-  iconTwo.loading = "lazy";
   iconThree.setAttribute("src", iconsrcthree);
   iconThree.setAttribute("alt", descThree);
-  iconThree.loading = "lazy";
 }

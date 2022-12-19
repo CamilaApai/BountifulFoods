@@ -171,12 +171,6 @@ section,
   border: var(--border);
 }
 
-img.fruits,
-img.drinks {
-  width: 130px;
-  height: auto;
-}
-
 /*Weather*/
 .threedayinfo {
   display: grid;
