@@ -27,18 +27,19 @@
   /* || MAIN ||*/
 
   /*Home Pague*/
-  /* Slides */
+  
+  /* Images */
   .hide {
     display: block;
   }
-  
+
   img.fruits,
   img.drinks {
-  width: 200px;
-  height: auto;
- }
+    width: 200px;
+    height: auto;
+  }
 
- /*EndHome Pague*/
+  /*EndHome Pague*/
 
   /*About Us Page*/
   main.aboutus {
@@ -59,10 +60,10 @@
 
   /*End About Us Page*/
 
-/*|| FOOTER ||*/
-footer .grid {
-  grid-template-rows: 1fr 0fr 0fr;
-}
+  /*|| FOOTER ||*/
+  footer .grid {
+    grid-template-rows: 1fr 0fr 0fr;
+  }
 
   footer .social {
     text-align: center;
@@ -70,5 +71,5 @@ footer .grid {
 
   footer .social img {
     width: 40px;
-}
+  }
 }
